@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;600;700;800;900&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5rem 12rem;
+}
+
+mark {
+    background-color: #bc13fe;
+    color: white;
+    font-weight: 800;
+}
+
+.section-title {
+    margin-left: 2rem;
+    font-weight: bolder;
+    font-size: 3.3rem;
+}
+
+.aboutme {
+    background-color: #FFF;
+}
+
+.aboutme p {
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.myskills {
+    color: #f0f0f0;
+    background-color: #101010;
+}
