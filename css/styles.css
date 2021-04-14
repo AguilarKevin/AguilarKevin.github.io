@@ -10,33 +10,138 @@ body {
     padding: 0;
 }
 
-section {
-    padding: 5rem 12rem;
+#navbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: #000000;
+    padding: 1rem 0.8rem;
+    transition: 0.3s;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "logo" "nav" "links";
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    justify-content: center;
 }
 
-mark {
-    background-color: #bc13fe;
+
+/* Style the navbar links */
+
+#navbar a {
     color: white;
-    font-weight: 800;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 
-.section-title {
-    margin-left: 2rem;
-    font-weight: bolder;
-    font-size: 3.3rem;
+
+/* Style the logo */
+
+#navbar #logo {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+    grid-area: "logo";
 }
 
-.aboutme {
-    background-color: #FFF;
+.nav {
+    grid-area: "nav";
+    margin-top: 0.5rem;
 }
 
-.aboutme p {
-    margin-left: 10rem;
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+.navbar-icons {
+    right: 0;
+    grid-area: "links";
 }
 
-.myskills {
-    color: #f0f0f0;
-    background-color: #101010;
+.navbar-icons img {
+    margin-top: 0.7rem;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Links on mouse-over */
+
+#navbar a:hover {
+    color: #20c1bd;
+}
+
+
+/* Style the active/current link */
+
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+/* Display some links to the right */
+
+#navbar-right {
+    float: right;
+}
+
+.header {
+    clear: both;
+    background-color: #20c1bd;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+}
+
+.header img {
+    display: inline-block;
+    top: 40px;
+    margin-top: 6em;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.helper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+
+/* Dark Grey */
+
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+        /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
 }
