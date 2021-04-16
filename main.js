@@ -18,11 +18,9 @@ function closeMenu() {
 }
 
 window.onscroll = () => {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         document.getElementById("sticky-navbar").style.padding = "20px 10px";
-        document.getElementById("logo").style.fontSize = "20px";
     } else {
         document.getElementById("sticky-navbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "25px";
     }
 }
