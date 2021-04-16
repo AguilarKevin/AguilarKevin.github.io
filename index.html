@@ -5,42 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>AguilarKevin</title>
 </head>
 
 <body>
-    <div class="container">
-        <div id="navbar">
-            <a href="#default" id="logo" class="logo-left">AguilarKevin</a>
-            <div class="nav">
-                <a class="active" href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#about">Skills</a>
-                <a href="#about">Contact</a>
-            </div>
-            <div class="navbar-icons">
-                <a href="https://github.com/AguilarKevin"><img src="./img/github.svg"></a>
-                <a href="https://github.com/AguilarKevin"><img src="./img/linkedin.svg"></a>
-            </div>
 
+    <div class="navbar" id="sticky-navbar">
+        <a href="#banner" id="logo" class="nav-logo">AguilarKev.</a>
+        <nav class="nav-links">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="https://github.com/AguilarKevin"><img src="./img/github.svg"></a>
+            <a href="https://github.com/AguilarKevin"><img src="./img/linkedin.svg"></a>
         </div>
 
-        <div class="header">
-            <span class="helper"></span>
-            <img src="./img/profile.jpeg" alt="">
-            <h1>Kevin Aguilar</h1>
-            <h2>Junior Frontend Developer</h2>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+
+    <!--
+    <div class="navbar" id="sticky-navbar">
+        <a href="#banner" id="logo" class="logo-left active">AguilarKevin</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#about">Skills</a>
+            <a href="#about">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="https://github.com/AguilarKevin"><img src="./img/github.svg"></a>
+            <a href="https://github.com/AguilarKevin"><img src="./img/linkedin.svg"></a>
         </div>
 
-        <div class="about-me">
-            <h1>About me</h1>
-            <h3>I'm Kevin Aguilar!</h3>
-            <p>I'm a Junior Frontend Developer based in Nicaragua and and I'm currently a student of Computer Science Engineering.</p>
-        </div>
-        <div class="skills">
-        </div>
+        <a href="javascript:void(0);" class="icon" onclick="onClickMenuButton()">
+            <i class="fa fa-bars"></i>
+        </a>
 
+    </div>
+-->
+    <div id="banner" class="header div-content">
+        <img src="./img/profile.jpeg" alt="">
+        <h1>Kevin Aguilar</h1>
+        <h2>Junior Frontend Developer</h2>
+    </div>
+
+    <div class="about-me div-content">
+        <h1>About me</h1>
+        <h2>I'm Kevin Aguilar!</h2>
+        <p>I'm a Junior Frontend Developer based in Nicaragua and and I'm currently a student of Computer Science Engineering.</p>
+    </div>
+    <div class="skills">
     </div>
 
     <script src="./main.js"></script>
