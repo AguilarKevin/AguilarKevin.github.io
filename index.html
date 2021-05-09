@@ -4,66 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>AguilarKevin</title>
+    <title>AguilarKev.</title>
 </head>
 
 <body>
-
-    <div class="navbar" id="sticky-navbar">
-        <a class="nav-logo" href="#banner" id="logo">
-            <img id="logo-img" src="./img/logo.png"> AguilarKev.
-        </a>
-        <nav class="nav-links">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <div class="topnav">
+        <a href="#home" class="nav-logo">AguilarKev.</a>
+        <div class="nav-items">
+            <a href="about">About</a>
+            <a href="skills">Skills</a>
+            <a href="services">Services</a>
+            <a href="contact">Contact</a>
         </div>
     </div>
-
-    <div id="banner" class="banner-bg  div-content">
-        <div class="header">
-            <img src="./img/profile.jpeg">
-            <div class="banner-text">
-                <h1>Kevin Aguilar!</h1>
-                <h2>Junior Frontend Developer</h2>
-                <div id="btn-cv"></div>
-            </div>
-        </div>
+    <div id="#home" class="div-content">
+        <h1>Hi, I'm <strong>Kevin</strong>.</h1>
+        <h2>I'm a junior fullstack dev.</h2>
     </div>
-
-    <div class="about-me div-content">
+    <div id="about" class="div-content">
         <h1>About me</h1>
-        <h2>I'm Kevin Aguilar!</h2>
-        <p>I'm a Junior Frontend Developer based in Nicaragua and and I'm currently a student of Computer Science Engineering.</p>
-    </div>
-    <div class="skills div-content">
-        <div class="div1 skill-card"> HTML5</div>
-        <div class="div2 skill-card"> CSS3</div>
-        <div class="div3 skill-card"> JS</div>
-        <div class="div4 skill-card"> Python</div>
-        <div class="div5 skill-card"> Java</div>
-        <div class="div6 skill-card"> Android/Kotlin</div>
-    </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam inventore amet fugiat quos temporibus, eligendi, non odio nulla esse similique explicabo illum nihil animi itaque quod, aliquam atque? Dignissimos.</p>
+        <div class="div-personal-data">
 
-    <script src="./main.js"></script>
+        </div>
+
+
+    </div>
+    <div id="skills" class="div-content"></div>
+    <div id="services" class="div-content"></div>
+    <div id="contact" class="div-content">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer div-content"></div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
