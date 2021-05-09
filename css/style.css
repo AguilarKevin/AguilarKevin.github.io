@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --main-color: #26001b;
+    --color-1: #f9813a;
+    --color-2: #64dfdf;
+    --color-3: #f638dc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
+    color: var(--color-2);
+}
+
+[id] {
+    scroll-margin-top: 2ex;
+}
+
+.div-content {
+    height: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.sticky-navbar {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+}
+
+.nav-logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-shadow: 0, rgba(, redgreen, blue, alpha);
+    animation: neon-logo 2s infinite alternate ease-in-out;
+    color: white;
+}
+
+.nav-logo img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#selected-nav-item {
+    background-image: linear-gradient(45deg, var(--color-2), var(--color-3));
+}
+
+.nav-link:hover {
+    color: #FC00FF;
+}
+
+.nav-link a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.banner-bg {
+    height: 100%;
+    padding: 12% 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.94)), url("/img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
