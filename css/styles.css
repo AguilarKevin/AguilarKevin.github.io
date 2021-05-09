@@ -4,16 +4,20 @@
     --color-1: #f9813a;
     --color-2: #64dfdf;
     --color-3: #f638dc;
+    /*neon colors*/
+    --neon-cyan: rgba(0, 212, 255, 1);
+    --neon-pink: rgba(255, 0, 255, 1);
 }
 
 html {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 [id] {
-    scroll-margin-top: 2ex;
+    scroll-margin-top: 60px;
 }
 
 * {
@@ -21,6 +25,12 @@ html {
     padding: 0;
     box-sizing: border-box;
     color: #FFF;
+}
+
+body {
+    height: 100%;
+    padding-top: 60px;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -32,21 +42,95 @@ a {
 }
 
 .topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 60px;
     background-color: var(--main-color);
     font-size: 18pt;
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    align-items: center;
 }
 
 .nav-logo {
-    background: -webkit-linear-gradient(left, rgba(0, 212, 255, 1), rgba(255, 0, 255, 1));
+    background: -webkit-linear-gradient(left, var(--neon-cyan), var(--neon-pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 500;
 }
 
 .nav-items a {
     font-size: 14pt;
     margin: 0px 10px;
+    font-weight: 200;
+}
+
+.nav-items a:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 15px var(--neon-cyan), 0 0 5px #FFF;
+}
+
+.nav-item-active {
+    color: #FFF;
+    text-shadow: 0 0 5px #FFF, 0 0 15px var(--neon-cyan);
+}
+
+.hamburger {
+    display: none;
+    margin-top: 1rem;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.div-content {
+    background-color: #414040;
+    height: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+#home {
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bg.jpg");
+    text-align: center;
+}
+
+.home-text {
+    height: 100%;
+    color: white;
+    background-image: radial-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), black);
+}
+
+@media only screen and(max-width:768px) {
+    .nav-items {
+        position: fixed;
+        top: -100%;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
