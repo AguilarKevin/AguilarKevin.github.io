@@ -12,30 +12,40 @@
 
 <body>
     <div class="topnav">
-        <a href="#home" class="nav-logo">AguilarKev.</a>
+        <a href="#home" class="nav-links nav-item-active">AguilarKev.</a>
         <div class="nav-items">
-            <a href="about">About</a>
-            <a href="skills">Skills</a>
-            <a href="services">Services</a>
-            <a href="contact">Contact</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </div>
-    <div id="#home" class="div-content">
-        <h1>Hi, I'm <strong>Kevin</strong>.</h1>
-        <h2>I'm a junior fullstack dev.</h2>
+    <div id="home" class="div-content">
+        <div class="home-text">
+            <h1>Hi, I'm <strong>Kevin</strong>.</h1>
+            <p>I'm a junior fullstack dev.</p>
+        </div>
     </div>
     <div id="about" class="div-content">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam inventore amet fugiat quos temporibus, eligendi, non odio nulla esse similique explicabo illum nihil animi itaque quod, aliquam atque? Dignissimos.</p>
         <div class="div-personal-data">
-
         </div>
-
-
     </div>
-    <div id="skills" class="div-content"></div>
-    <div id="services" class="div-content"></div>
+    <div id="skills" class="div-content">
+        <h1>Skills</h1>
+    </div>
+    <div id="services" class="div-content">
+        <h1>Services</h1>
+    </div>
     <div id="contact" class="div-content">
+        <h1>Contact me</h1>
         <form>
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
