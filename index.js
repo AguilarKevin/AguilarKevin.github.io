@@ -10,5 +10,5 @@ const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach(n => n.addEventListener("click", () => {
     hamburgerBtn.classList.remove("active");
-    navMenuBtn.classList.remove("active");
+    navMenu.classList.remove("active");
 }));
