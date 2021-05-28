@@ -96,14 +96,17 @@ a {
 }
 
 .nav-logo {
+    font-size: 16pt;
     font-weight: 500;
-    font-size: 20pt;
     padding: 5px;
-    color: var(--color-2);
+    color: #FFF;
 }
 
-.nav-item-active {
+.active {
+    transition: 0.3s;
     color: var(--color-1);
+    font-size: 17pt;
+    font-weight: bold;
 }
 
 

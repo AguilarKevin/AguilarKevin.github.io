@@ -1,22 +1,30 @@
 const hamburgerBtn = document.querySelector(".hamburger");
 
 const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".nav-link");
 const navLogo = document.querySelector(".nav-logo");
+const sections = document.querySelectorAll('.div-content');
+
 
 const changeActiveNavItem = () => {
-    navLogo.classList.toggle("nav-item-active");
-    item.classList.toggle("nav-item-active");
+
+    let index = sections.length;
+
+    while (--index && window.scrollY + 70 < sections[index].offsetTop) {}
+
+    navLinks.forEach((link) => link.classList.remove('active'));
+
+    navLinks[index].classList.add('active');
 }
 
-const toggleMenu = (item) => {
+const toggleMenu = () => {
     hamburgerBtn.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
 
 hamburgerBtn.addEventListener("click", toggleMenu);
 
-navLink.forEach(n => {
+navLinks.forEach(n => {
     n.addEventListener("click", toggleMenu);
 });
 
@@ -26,4 +34,4 @@ navLogo.addEventListener("click", () => {
     }
 });
 
-document.addEventListener("scroll", () => { changeActiveNavItem });
+window.addEventListener('scroll', changeActiveNavItem);
