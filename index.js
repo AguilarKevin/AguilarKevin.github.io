@@ -3,7 +3,7 @@ const hamburgerBtn = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
 const navLogo = document.querySelector(".nav-logo");
-const sections = document.querySelectorAll('.div-content');
+const sections = document.querySelectorAll('.div-section');
 
 
 const changeActiveNavItem = () => {

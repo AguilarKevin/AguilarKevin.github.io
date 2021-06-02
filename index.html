@@ -37,56 +37,76 @@
         </nav>
     </header>
 
-    <div id="home" class="div-content">
-        <div class="home-text">
-            <h1>Hello and welcome!, I'm <strong>Kevin</strong>.</h1>
+    <div id="home" class="div-section">
+        <div class="home-text div-section-content">
+            <h1>Hello and welcome!<br>I'm <strong>Kevin</strong>.</h1>
             <p>I'm a junior <strong>Web</strong> Dev.</p>
             <button class="btn"><a href="https://github.com/AguilarKevin">Visit my GitHub</a></button>
         </div>
     </div>
-    <div id="about" class="div-content">
-        <h1 class="section-title">About Me</h1>
-        <div class="about-info">
-            <div class="about-info-img">
-                <img src="/img/web-desing.png" alt="web development">
-            </div>
-            <div class="about-info-text">
-                <p>
-                    My name is <strong>Kevin Aguilar</strong> I'm a 19 year old <strong>Junior Web dev</strong> based in <strong>Nic</strong>ara<strong>gua</strong> .
-                    <br><br> I describe myself as a passionate developer who loves coding, design beautiful UI, open source, and the web platform. I like to create and contribute to open source projects. That helps me to learn a ton of new stuff, grow
-                    as a developer. In my free time i play with FL Studio, doing homeworkout, or just watching memes about coding.
-                </p>
+    <div id="about" class="div-section">
+        <div class="div-section-content">
+            <h1 class="section-title">About Me</h1>
+            <div class="about-info">
+                <div class="about-info-img">
+                    <img src="/img/web-desing.png" alt="web development">
+                </div>
+                <div class="about-info-text">
+                    <p>
+                        My name is <strong>Kevin Aguilar</strong> I'm a 19 year old <strong>Junior Web dev</strong> based in <strong>Nic</strong>ara<strong>gua</strong> .
+                        <br><br> I describe myself as a passionate developer who loves coding, design beautiful UI, open source, and the web platform. I like to create and contribute to open source projects. That helps me to learn a ton of new stuff,
+                        grow as a developer. In my free time i play with FL Studio, doing homeworkout, or just watching memes about coding.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div id="skills" class="div-content">
-        <h1 class="section-title">Some of my skills</h1>
-        <h2 class="section-subtitle">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</h2>
+    <div id="skills" class="div-section">
+        <div class="div-section-content">
+            <h1 class="section-title">Some of my skills</h1>
+            <h2 class="section-subtitle">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</h2>
+            <div class="div-skills-card">
+                <div class="skill-card">
+                    <h1>Web development</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident explicabo nostrum mollitia eos.</p>
+                </div>
+                <div class="skill-card">
+                    <h1>Android Apps</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident explicabo nostrum mollitia eos.</p>
+                </div>
+                <div class="skill-card">
+                    <h1>Web Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident explicabo nostrum mollitia eos.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="services" class="div-content">
+    <div id="services" class="div-section">
         <h1 class="section-title">Services</h1>
     </div>
-    <div id="contact" class="div-content">
-        <h1 class="section-title">Contact me</h1>
+    <div id="contact" class="div-section">
+        <div class="div-section-content">
+            <h1 class="section-title">Contact me</h1>
 
-        <div class="contact-form">
-            <form>
-                <p type="Name:"><input class="contat-input" placeholder="Write your name here.."></input>
-                </p>
-                <p type="Email:"><input class="contat-input" placeholder="Let us know how to contact you back.."></input>
-                </p>
-                <p type="Message:"><input class="contat-input" placeholder="What would you like to tell us.."></input>
-                </p>
-                <button class="btn">Send Message</button>
-                <div class="contact-email-div">
-                    <span class="fa fa-envelope-o"></span> kevinaguilar0813@gmail.com
-                </div>
-            </form>
+            <div class="div-contact-form">
+                <form class="contact-form">
+                    <p class="label lbl-name" type="Name:"><input class="contat-input" placeholder="Write your name here.."></input>
+                    </p>
+                    <p class="label lbl-email" type="Email:"><input class="contat-input" placeholder="Let us know how to contact you back.."></input>
+                    </p>
+                    <p class="label lbl-msg" type="Message:">
+                        <textarea class="contat-input" placeholder="What would you like to tell us.."></textarea>
+                    </p>
+                    <button class="btn btn-sendmsg">Send Message</button>
+                </form>
+            </div>
         </div>
+
     </div>
-    <footer class="footer">
+    <div class="footer">
+        <p>Copyright © 2021 All rights reserved Kevin Aguilar</p>
         <a href="https://www.freepik.es/vectores/nube">Vector de Nube creado por vectorjuice - www.freepik.es</a>
-    </footer>
+    </div>
     <script src="./index.js"></script>
 </body>
 
