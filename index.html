@@ -41,7 +41,7 @@
         <div class="home-text">
             <h1>Hello and welcome!, I'm <strong>Kevin</strong>.</h1>
             <p>I'm a junior <strong>Web</strong> Dev.</p>
-            <div class="btn-github"><a href="https://github.com/AguilarKevin">Visit my GitHub</a></div>
+            <button class="btn"><a href="https://github.com/AguilarKevin">Visit my GitHub</a></button>
         </div>
     </div>
     <div id="about" class="div-content">
@@ -68,18 +68,21 @@
     </div>
     <div id="contact" class="div-content">
         <h1 class="section-title">Contact me</h1>
-        <form>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+        <div class="contact-form">
+            <form>
+                <p type="Name:"><input class="contat-input" placeholder="Write your name here.."></input>
+                </p>
+                <p type="Email:"><input class="contat-input" placeholder="Let us know how to contact you back.."></input>
+                </p>
+                <p type="Message:"><input class="contat-input" placeholder="What would you like to tell us.."></input>
+                </p>
+                <button class="btn">Send Message</button>
+                <div class="contact-email-div">
+                    <span class="fa fa-envelope-o"></span> kevinaguilar0813@gmail.com
+                </div>
+            </form>
+        </div>
     </div>
     <footer class="footer">
         <a href="https://www.freepik.es/vectores/nube">Vector de Nube creado por vectorjuice - www.freepik.es</a>
