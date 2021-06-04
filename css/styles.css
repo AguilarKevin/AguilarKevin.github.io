@@ -125,7 +125,7 @@ a {
 
 .div-section-content {
     align-self: center;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
 }
 
@@ -153,6 +153,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    text-align: center;
 }
 
 .home-text h1 {
@@ -193,29 +194,17 @@ a {
 .about-info h1,
 strong {
     font-weight: bolder;
-    color: var(--color-1);
-}
-
-.about-info-img {
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 3rem;
-}
-
-.about-info-img img {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    align-items: center;
 }
 
 .about-info-text {
     align-self: stretch;
     display: flex;
     align-items: center;
-    background-color: #121212;
+    background-color: var(--color-1);
+    border-radius: 10px;
+    box-shadow: 0 10px 40px -10px var(--color-1);
+    margin: 10px;
+    padding: 20px;
     border-bottom-right-radius: 20px;
     padding: 0 3rem;
 }
@@ -229,9 +218,9 @@ strong {
     background-color: var(--main-color);
 }
 
-.skill-card {
-    padding: 15px;
-    margin: 10px;
+.div-skills-cards-c1 .skill-card {
+    padding: 15px 0;
+    margin: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -239,39 +228,112 @@ strong {
     column-gap: 5px;
 }
 
+.skill-card h1 {
+    color: #FFF;
+    font-size: 10pt;
+    text-align: center;
+    margin: 3px 0;
+}
+
 .progress {
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
-    position: relative;
-    padding: 0 5px;
+    padding: 0;
     display: flex;
     height: 40px;
-    width: 200px;
+    width: 40vw;
+    background-color: #121212;
 }
 
 .progress-value {
-    animation: load 3s normal forwards;
     padding: 5px;
     box-shadow: 0 10px 40px -10px var(--color-1);
     border-radius: 100px;
     background: var(--color-1-light);
     height: 30px;
     width: 0;
-}
-
-.progress-value h1 {
     color: #FFF;
     font-size: 10pt;
+    font-weight: bold;
     text-align: center;
 }
 
-@keyframes load {
+#html {
+    animation: load-html 3s normal forwards;
+}
+
+#css {
+    animation: load-css 3s normal forwards;
+}
+
+#js {
+    animation: load-js 3s normal forwards;
+}
+
+#react {
+    animation: load-react 3s normal forwards;
+}
+
+#node {
+    animation: load-node 3s normal forwards;
+}
+
+#mongo {
+    animation: load-mongo 3s normal forwards;
+}
+
+@keyframes load-html {
     0% {
         width: 0;
     }
     100% {
-        width: 95%;
+        width: 90%;
+    }
+}
+
+@keyframes load-css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes load-js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes load-react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes load-node {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes load-mongo {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
     }
 }
 
@@ -299,10 +361,11 @@ strong {
 }
 
 .contact-form {
-    background-color: #121212;
-    border-radius: 15px;
+    border-radius: 7px;
+    background: #121212;
     text-align: left;
-    width: 33vw;
+    width: 32vw;
+    margin: 0;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -314,7 +377,7 @@ strong {
 .contat-input {
     width: 100%;
     padding: 12px;
-    background-color: #383838;
+    background-color: #161616;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -323,7 +386,7 @@ strong {
     color: #FFF;
 }
 
-.contact-input:hover {
+.contact-input:focus {
     border-color: (--color-1);
 }
 
@@ -387,7 +450,12 @@ strong {
     color: #1F9CE4;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:450px) {
+    [id] {
+        scroll-margin-top: 30px;
+    }
     .nav-menu {
         z-index: -1;
         position: fixed;
