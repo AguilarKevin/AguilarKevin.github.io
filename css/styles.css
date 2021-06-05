@@ -411,31 +411,52 @@ strong {
         height: 50px;
         font-size: 12pt;
     }
+    .div-section-header {
+        margin: 10px 17vw;
+        align-self: flex-start;
+    }
+    .div-section-content {
+        width: 66vw;
+    }
     .about-info {
-        width: 65vw;
+        width: 66vw;
+        margin: 0;
         height: 50vh;
     }
     .about-info-text p {
         font-size: 15pt;
     }
     .div-skills-cards {
+        width: 66vw;
+        margin: 0;
         flex-direction: column;
     }
     .skill-card {
+        margin: 0;
         margin-top: 25px;
     }
     .progress {
-        width: 53vw;
+        margin: 0;
+        width: 66vw;
     }
     .progress,
     .progress-value {
         height: 40px;
     }
     .div-service-cards {
-        width: 70vw;
+        width: 66vw;
+        column-gap: 10px;
+    }
+    .div-service-cards-left,
+    .div-service-cards-right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
     }
     .service-card {
-        width: 280px;
+        width: 240px;
+        margin: 0;
+        height: 225px;
     }
     .service-card h1 {
         font-size: 18pt;
@@ -543,6 +564,7 @@ strong {
     }
     .service-card {
         width: 75vw;
+        height: min-content;
         margin: 0;
         margin-bottom: 20px;
     }
