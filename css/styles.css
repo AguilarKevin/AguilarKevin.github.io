@@ -172,20 +172,19 @@ a {
 }
 
 #about {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
 }
 
 .about-info {
     width: 40vw;
-    height: 50vh;
     margin: 2rem 0;
     padding: 0;
+    border-radius: 15px;
+    background: #121212;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-self: center;
-    background-color: #090909;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 .about-info h1 {
@@ -198,24 +197,37 @@ strong {
 }
 
 .about-info-text {
-    align-self: stretch;
     display: flex;
     align-items: center;
-    background-color: var(--color-1);
-    border-radius: 10px;
-    box-shadow: 0 10px 40px -10px var(--color-1);
+    flex-direction: column;
     margin: 10px;
     padding: 20px;
     border-bottom-right-radius: 20px;
 }
 
 .about-info-text p {
+    align-self: center;
     color: #FFF;
     font-size: 12pt;
 }
 
+.about-social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-btn {
+    background-color: var(--color-1);
+    border-radius: 40px;
+    box-shadow: 0 10px 40px -10px var(--color-1);
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin: 15px;
+}
+
 #skills {
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
 }
 
 .div-skills-cards-c1 .skill-card {
@@ -264,88 +276,11 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#html {
-    animation: load-html 3s normal forwards;
-}
-
-#css {
-    animation: load-css 3s normal forwards;
-}
-
-#js {
-    animation: load-js 3s normal forwards;
-}
-
-#react {
-    animation: load-react 3s normal forwards;
-}
-
-#node {
-    animation: load-node 3s normal forwards;
-}
-
-#mongo {
-    animation: load-mongo 3s normal forwards;
-}
-
-@keyframes load-html {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes load-css {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes load-js {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes load-react {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 10%;
-    }
-}
-
-@keyframes load-node {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 10%;
-    }
-}
-
-@keyframes load-mongo {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
+    transition: width 2s;
 }
 
 #services {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
 }
 
 .div-service-cards,
@@ -459,12 +394,33 @@ strong {
     color: #1F9CE4;
 }
 
-@media only screen and (max-width:768px) {}
+
+/* tablets */
+
+@media only screen and (max-width:768px) {
+    .home-text h1 {
+        font-size: 40pt;
+    }
+    .home-text h2 {
+        font-size: 20pt;
+    }
+    .home-text button {
+        height: 50px;
+        font-size: 12pt;
+    }
+    .about-info {
+        width: 65vw;
+        height: 35vh;
+    }
+    .about-info-text p {
+        font-size: 15pt;
+    }
+}
+
+
+/* phones */
 
 @media only screen and (max-width:450px) {
-    [id] {
-        scroll-margin-top: 30px;
-    }
     .nav-menu {
         z-index: -1;
         position: fixed;
