@@ -28,7 +28,6 @@ html {
 
 body {
     height: 100%;
-    /* padding-top: 60px;*/
     scroll-behavior: smooth;
 }
 
@@ -157,7 +156,7 @@ a {
 }
 
 .home-text h1 {
-    font-size: 50pt;
+    font-size: 40pt;
 }
 
 .home-text strong {
@@ -300,6 +299,10 @@ strong {
     color: #FFF;
 }
 
+.service-card p {
+    margin-top: 7px;
+}
+
 #contact {
     background-color: var(--main-color);
 }
@@ -309,7 +312,7 @@ strong {
     background: #121212;
     text-align: left;
     width: 32vw;
-    margin: 0;
+    margin-top: 10px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -410,10 +413,40 @@ strong {
     }
     .about-info {
         width: 65vw;
-        height: 35vh;
+        height: 50vh;
     }
     .about-info-text p {
         font-size: 15pt;
+    }
+    .div-skills-cards {
+        flex-direction: column;
+    }
+    .skill-card {
+        margin-top: 25px;
+    }
+    .progress {
+        width: 53vw;
+    }
+    .progress,
+    .progress-value {
+        height: 40px;
+    }
+    .div-service-cards {
+        width: 70vw;
+    }
+    .service-card {
+        width: 280px;
+    }
+    .service-card h1 {
+        font-size: 18pt;
+    }
+    .service-card p {
+        font-size: 12pt;
+    }
+    .contact-form {
+        width: 70vw;
+        height: 50vh;
+        grid-template-areas: "name name name" "email email email" "msg msg msg" "btn-msg  btn-msg btn-msg";
     }
 }
 
@@ -421,6 +454,9 @@ strong {
 /* phones */
 
 @media only screen and (max-width:450px) {
+    .navbar {
+        justify-content: space-between;
+    }
     .nav-menu {
         z-index: -1;
         position: fixed;
@@ -455,20 +491,21 @@ strong {
     }
     /*hero text*/
     .home-text h1 {
-        font-size: 30pt;
+        font-size: 22pt;
         margin: 20px 0;
+    }
+    .home-text h2 {
+        font-size: 15pt;
     }
     .home-text strong {
         color: var(--color-1);
     }
-    .home-text p {
-        font-size: 15pt;
-    }
-    .navbar {
-        justify-content: space-between;
+    .div-section {
+        align-items: center;
     }
     .div-section-header {
-        margin: 20px;
+        margin: 10px 40px;
+        align-self: flex-start;
     }
     .div-section-header h1 {
         font-size: 20px;
@@ -476,14 +513,16 @@ strong {
     .div-section-header h2 {
         font-size: 12px;
     }
+    .about-info {
+        height: 60vh;
+    }
     .about-info-text {
-        padding: 20px;
+        padding: 10px;
     }
     .about-info-text p {
-        font-size: 15px;
+        font-size: 11pt;
     }
     .skill-card {
-        padding: 10px;
         margin: 7px;
     }
     .skill-card h1 {
@@ -495,6 +534,30 @@ strong {
     }
     .progress-value {
         height: 28px;
+        font-size: 8pt;
+    }
+    #services,
+    #contact {
+        height: min-content;
+        padding: 20px 0;
+    }
+    .service-card {
+        width: 75vw;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .service-card h1 {
+        font-size: 13pt;
+    }
+    .service-card p {
+        font-size: 10pt;
+    }
+    #contact {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .contact-form {
+        height: 65vh;
     }
     .div-service-cards,
     .div-skills-cards,
