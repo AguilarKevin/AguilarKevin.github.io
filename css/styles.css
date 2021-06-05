@@ -128,13 +128,18 @@ a {
     align-items: center;
 }
 
+.div-section-header {
+    border-left: 7px solid var(--color-1);
+    margin: 0;
+    padding: 0;
+}
+
 .section-title {
     width: max-content;
     color: #FFF;
     font-size: 25pt;
     font-weight: 800;
-    border-left: 7px solid var(--color-1);
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: center;
 }
 
@@ -143,8 +148,8 @@ a {
     color: #909090;
     font-weight: 500;
     border-left: 7px solid transparent;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 7px;
 }
 
 #home {
@@ -411,31 +416,52 @@ strong {
         height: 50px;
         font-size: 12pt;
     }
+    .div-section-header {
+        margin: 10px 17vw;
+        align-self: flex-start;
+    }
+    .div-section-content {
+        width: 66vw;
+    }
     .about-info {
-        width: 65vw;
+        width: 66vw;
+        margin: 0;
         height: 50vh;
     }
     .about-info-text p {
         font-size: 15pt;
     }
     .div-skills-cards {
+        width: 66vw;
+        margin: 0;
         flex-direction: column;
     }
     .skill-card {
+        margin: 0;
         margin-top: 25px;
     }
     .progress {
-        width: 53vw;
+        margin: 0;
+        width: 66vw;
     }
     .progress,
     .progress-value {
         height: 40px;
     }
     .div-service-cards {
-        width: 70vw;
+        width: 66vw;
+        column-gap: 10px;
+    }
+    .div-service-cards-left,
+    .div-service-cards-right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
     }
     .service-card {
-        width: 280px;
+        width: 240px;
+        margin: 0;
+        height: 225px;
     }
     .service-card h1 {
         font-size: 18pt;
@@ -489,6 +515,9 @@ strong {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .div-section {
+        padding: 10vw;
+    }
     /*hero text*/
     .home-text h1 {
         font-size: 22pt;
@@ -501,10 +530,18 @@ strong {
         color: var(--color-1);
     }
     .div-section {
-        align-items: center;
+        padding: 0;
+    }
+    #about,
+    #skills,
+    #services,
+    #contact {
+        height: min-content;
+        padding: 50px 5vw;
     }
     .div-section-header {
-        margin: 10px 40px;
+        margin: 0px;
+        margin-bottom: 25px;
         align-self: flex-start;
     }
     .div-section-header h1 {
@@ -513,38 +550,59 @@ strong {
     .div-section-header h2 {
         font-size: 12px;
     }
+    .div-section-content {
+        width: 90vw;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
     .about-info {
-        height: 60vh;
+        align-self: center;
+        padding: 20px;
+        height: 65vh;
     }
     .about-info-text {
-        padding: 10px;
+        align-self: center;
+        padding: 0;
+    }
+    .social-btn,
+    .about-info-text {
+        margin: 0;
     }
     .about-info-text p {
-        font-size: 11pt;
+        font-size: 10pt;
+    }
+    .about-social {
+        padding: 20px;
+    }
+    .social-btn {
+        margin-inline: 10px;
     }
     .skill-card {
-        margin: 7px;
+        justify-content: center;
+        align-items: center;
     }
     .skill-card h1 {
-        font-size: 16px;
+        width: 90vw;
+        font-size: 1.5rem;
+        align-self: center;
     }
     .progress {
         height: 30px;
-        width: 70vw;
+        width: 90vw;
     }
     .progress-value {
         height: 28px;
         font-size: 8pt;
     }
-    #services,
-    #contact {
-        height: min-content;
-        padding: 20px 0;
+    .div-service-cards-left,
+    .div-service-cards-right {
+        padding-block: 7px;
     }
     .service-card {
-        width: 75vw;
+        width: 90vw;
+        height: min-content;
         margin: 0;
-        margin-bottom: 20px;
     }
     .service-card h1 {
         font-size: 13pt;
@@ -554,19 +612,19 @@ strong {
     }
     #contact {
         flex-direction: column;
-        height: 100vh;
     }
     .contact-form {
-        height: 65vh;
+        height: 72vh;
     }
     .div-service-cards,
+    .div-services-card,
     .div-skills-cards,
-    .about-info,
-    .div-services-card {
+    .about-info {
         flex-direction: column;
     }
     .about-info,
     .contact-form {
         width: 90vw;
+        height: min-content;
     }
 }
